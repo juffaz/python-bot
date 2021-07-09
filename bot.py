@@ -1,7 +1,6 @@
 import telebot
 from telebot import types
 
-
 bot = telebot.TeleBot("1873101130:AAHmUWdnFxj0weBV56kyNtqc2PtFxgT9i7QQ")
 chat_id = 16818130
 
