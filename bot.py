@@ -7,7 +7,6 @@ bot = telebot.TeleBot(os.environ['TELETOK'])
 
 chat_id = 16818130
 
-
 markup = types.ReplyKeyboardMarkup(row_width=2)
 itembtn1 = types.KeyboardButton('a')
 itembtn2 = types.KeyboardButton('v')
