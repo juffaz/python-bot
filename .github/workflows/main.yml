@@ -21,12 +21,14 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -  
+        uses: secrethub/actions/env-export@v0.2.1
+        env:
+          TELETOK: '${{ secrets.TELETOK }}'
       -
         name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
-        env:
-          TELETOK: '${{ secrets.TELETOK }}'
         with:
           push: true
           tags: yuvenaliyt/python-bot:latest1
