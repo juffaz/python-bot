@@ -2,7 +2,7 @@ import os
 import telebot
 from telebot import types
 
-//bot = telebot.TeleBot("1873101130:AAHmUWdnFxj0weBV56kyNtqc2PtFxgT9i7QQ")
+###bot = telebot.TeleBot("1873101130:AAHmUWdnFxj0weBV56kyNtqc2PtFxgT9i7QQ")
 bot = telebot.TeleBot(os.environ['TELETOK'])
 
 chat_id = 16818130
