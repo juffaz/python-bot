@@ -9,3 +9,4 @@ COPY . .
 RUN chmod +x bot.py
 
 CMD [ "python", "bot.py" ]
+
