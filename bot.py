@@ -6,9 +6,10 @@ from dotenv import load_dotenv
 
 ###bot = telebot.TeleBot("1873101130:AAHmUWdnFxj0weBV56kyNtqc2PtFxgT9i7QQ")
 ##load_dotenv()
-##token = os.getenv('TELETOK')
-bot = telebot.TeleBot(os.environ['TELETOK'])
-#bot = telebot.TeleBot(token)
+token = os.getenv('TELETOK')
+print(token)
+#bot = telebot.TeleBot(os.environ['TELETOK'])
+bot = telebot.TeleBot(token)
 chat_id = 16818130
 
 markup = types.ReplyKeyboardMarkup(row_width=2)
