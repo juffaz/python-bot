@@ -6,5 +6,5 @@ RUN pip install --no-cache-dir -r req.txt
 COPY . .
 RUN chmod +x bot.py
 RUN --mount=type=secret,id=TELETOK \
-            cat /run/secrets/TELETOK
+            ls /run/secrets/TELETOK
 CMD [ "python", "bot.py" ]
