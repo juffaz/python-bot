@@ -26,7 +26,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         env:
-          TELETOK:${{ secrets.TELETOK }}
+          TELETOK: ${{ secrets.TELETOK }}
         with:
           push: true
           tags: yuvenaliyt/python-bot:latest1
