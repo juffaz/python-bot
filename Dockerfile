@@ -7,5 +7,5 @@ COPY . .
 RUN chmod +x bot.py
 RUN --mount=type=secret,id=TELETOK \
             cat /run/secrets/TELETOK
-ENV TELETOK='/run/secrets/TELETOK' 
+###ENV TELETOK='/run/secrets/TELETOK' 
 CMD [ "python", "bot.py" ]
