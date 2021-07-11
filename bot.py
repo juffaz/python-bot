@@ -1,16 +1,12 @@
 import os
 import telebot
 from telebot import types
-from dotenv import load_dotenv
 
-
-###bot = telebot.TeleBot("1873101130:AAHmUWdnFxj0weBV56kyNtqc2PtFxgT9i7QQ")
-##load_dotenv()
 token = os.getenv('TELETOK')
-print(token)
-#bot = telebot.TeleBot(os.environ['TELETOK'])
+chatid  = os.getenv('CHATID')
+
 bot = telebot.TeleBot(token)
-chat_id = 16818130
+chat_id = chatid
 
 markup = types.ReplyKeyboardMarkup(row_width=2)
 itembtn1 = types.KeyboardButton('a')
